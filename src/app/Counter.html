@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title></Title>
+    </head>
+    <body>
+        <main>
+        <p id="p">0</p>
+        <button id="Increase">Increase</button>
+        <button id="Decrease">Decrease</button>
+        <button id="Reset">Reset</button>
+        </main>
+        <script>
+            let count=0;
+            document.getElementById("Increase").onclick=function()
+            {
+                count=count+1;
+                console.log(count);
+                let b=document.getElementById("p").innerHTML=count;
+                
+    
+
+            }
+            
+            document.getElementById("Decrease").onclick=function()
+            {
+                count=count-1;
+                console.log(count);
+                document.getElementById("p").innerHTML=count;
+            }
+            document.getElementById("Reset").onclick=function()
+            {
+                count=0;
+                console.log(count);
+                document.getElementById("p").innerHTML=count;
+            }
+            
+            
+            
+        </script>
+    </body>
+</html>
